@@ -73,7 +73,11 @@ class SnakeGame:
             self.window.addch(head[0], head[1], curses.ACS_CKBOARD)
 
     def _game_over(self):
+ codex/-alima1
+        msg = f"Game Over! Score: {self.score} - Press any key"
+
         msg = f"Game Over! Score: {self.score} - Press any key".
+ main
         self.window.clear()
         self.window.addstr(self.height // 2, (self.width - len(msg)) // 2, msg)
         self.window.nodelay(False)
